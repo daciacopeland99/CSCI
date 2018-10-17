@@ -3,6 +3,8 @@
 
 #here will be the student id and the name 
 out_string: .asciiz "\nDacia Copeland\n"
+out_string: .asciiz "\n@02849198\n"
+#use as an example of output 
 
 .main
 
