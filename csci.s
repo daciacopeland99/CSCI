@@ -35,6 +35,11 @@ addi $a0, $a0, 13 #add 13 to get 110, "n"
 syscall
 sub $a0, $a0, 10 #subtract 10 to get 100, "d"
 syscall
+sub $a0, $a0, 56 #subtract 56 to get 44, ","
+syscall
+sub $a0, $a0, 12 #subtract 12 to get 32, SPACE
+syscall
+
 
 
 
