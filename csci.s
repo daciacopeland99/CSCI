@@ -6,9 +6,13 @@
 li $a0, '@'
 li $v0, 11
 syscall
+sub $v0, $v0, 10
+li, $a0, 0
+syscall
+lw $a0, NUM
+#print @ sign, the number 0, and the word variable NUM
 
-#here will be the program that reads the name and print it out.
-#have to use syscalls to print out the names and exit code
+
 li $v0, 11
 la $a0, 64
 syscall
