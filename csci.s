@@ -39,6 +39,16 @@ sub $a0, $a0, 56 #subtract 56 to get 44, ","
 syscall
 sub $a0, $a0, 12 #subtract 12 to get 32, SPACE
 syscall
+addi $a0, $a0, 36 #add 36 to get 68, "D"
+syscall
+addi $a0, $a0, 29 #add 29 to get 97, "a"
+syscall
+addi $a0, $a0, 2 #add 2 to get 99, "c"
+syscall
+addi $a0, $a0, 6 #add 6 to get 105, "i"
+syscall
+sub $a0, $a0, 8 #subtract 8 to get 97, "a"
+syscall 
 
 
 
