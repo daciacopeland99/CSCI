@@ -3,8 +3,9 @@
 
 #here will be the student id and the name 
 out_string: .asciiz "\nDacia Copeland\n"
-out_string: .asciiz "\n@02849198\n"
+out_string_two: .asciiz "\n@02849198\n"
 #use as an example of output 
+	.text
 
 .main
 #here will be the program that reads the name and print it out.
@@ -12,6 +13,8 @@ out_string: .asciiz "\n@02849198\n"
 li $v0, 4 
 la $a0, out_string
 #run and see what this does
+li $v0, 4
+la $a0, out_string_two
 
 syscall 
 #exit program
