@@ -20,6 +20,14 @@ la $a0, 0 #start back at 0
 addi $a0, a0, 10 #new line, stored # is now at 10
 syscall
 addi $a0, $a0, 57 #add 57 to stored # to get 67 which equals "C"
+syscall
+addi $a0, $a0, 44 #add 44 to 67 to get 111, "o"
+syscall
+addi $a0, $a0, 1 #add 112 to get 80, "p"
+syscall
+sub $a0, $a0, 11 #subtract 11 to get 101, "e"
+syscall
+
 
 
 #exit program
