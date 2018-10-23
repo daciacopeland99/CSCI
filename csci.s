@@ -27,6 +27,14 @@ addi $a0, $a0, 1 #add 112 to get 80, "p"
 syscall
 sub $a0, $a0, 11 #subtract 11 to get 101, "e"
 syscall
+addi $a0, $a0, 7 #add 7 to get 107, "l"
+syscall
+sub $a0, $a0, 10 #subtract 10 to get 97, "a"
+syscall
+addi $a0, $a0, 13 #add 13 to get 110, "n"
+syscall
+sub $a0, $a0, 10 #subtract 10 to get 100, "d"
+syscall
 
 
 
