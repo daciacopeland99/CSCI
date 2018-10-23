@@ -1,22 +1,24 @@
 #This program takes id number, first name and last name, and prints it out.
 .data 
-
-#here will be the student id and the name 
-out_string: .asciiz "\nDacia Copeland\n"
-out_string_two: .asciiz "\n@02849198\n"
-#use as an example of output 
+	NUM: .word 02849198
+#store my id num
 	.text
+li $a0, '@'
+li $v0, 11
+syscall
 
-.main
 #here will be the program that reads the name and print it out.
 #have to use syscalls to print out the names and exit code
-li $v0, 4 
-la $a0, out_string
+li $v0, 11
+la $a0, 64
+syscall
 #run and see what this does
-li $v0, 4
-la $a0, out_string_two
+sub $v0, 10
+sub $a0, 64
 
 syscall 
+addi $a0,2
+
 #exit program
 
 
